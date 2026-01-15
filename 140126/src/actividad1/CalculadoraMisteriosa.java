@@ -1,7 +1,7 @@
 package actividad1;
 
 import java.util.Scanner;
-//javier mayorga suarez
+//javier mayorga
 public class CalculadoraMisteriosa {
 
 	public static void main(String[] args) {
@@ -60,7 +60,7 @@ public class CalculadoraMisteriosa {
 		System.out.print("Ingresa el segundo número: ");
 		int b = sc.nextInt();
 
-		return a - b;
+		return a + b;
 	}
 
 	public static int restar(int a, int b) {
