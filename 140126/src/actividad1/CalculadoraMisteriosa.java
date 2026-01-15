@@ -1,7 +1,7 @@
 package actividad1;
 
 import java.util.Scanner;
-//javier mayorga
+//javier arturo mayorga suarez
 public class CalculadoraMisteriosa {
 
 	public static void main(String[] args) {
