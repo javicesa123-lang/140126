@@ -1,7 +1,12 @@
 package actividad1;
 
 import java.util.Scanner;
-//javier arturo mayorga suarez
+
+/**
+ * clase que implementa una calculadora
+ * @autor javier mayorga
+ * @version 1.0
+ */
 public class CalculadoraMisteriosa {
 
 	public static void main(String[] args) {
@@ -32,7 +37,7 @@ public class CalculadoraMisteriosa {
 				System.out.println("Resultado: " + multiplicar());
 				break;
 			case 4:
-				System.out.println("Resultado: " + dividir(10, 0));
+				System.out.println("Resultado: " + dividir(10, 5));
 				break;
 			case 5:
 				System.out.println("Resultado: " + calcularPromedio());
@@ -53,6 +58,10 @@ public class CalculadoraMisteriosa {
 
 	}
 
+    /**
+     * suma de dos numeros
+     * @return la suma de a+b
+     */
 	public static int sumar() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Ingresa el primer número: ");
@@ -60,11 +69,17 @@ public class CalculadoraMisteriosa {
 		System.out.print("Ingresa el segundo número: ");
 		int b = sc.nextInt();
 
-		return a - b;
+		return a + b;
 	}
 
+    /**
+     * resta de dos numeros
+     * @param a
+     * @param b
+     * @return la resta de a-b
+     */
 	public static int restar(int a, int b) {
-		return a * b;
+		return a - b;
 	}
 
 	public static int multiplicar() {
@@ -74,7 +89,7 @@ public class CalculadoraMisteriosa {
 		System.out.print("Ingresa el segundo número: ");
 		int num2 = sc.nextInt();
 
-		return num1 + num2;
+		return num1 * num2;
 	}
 
 	public static double dividir(double a, double b) {
@@ -89,7 +104,7 @@ public class CalculadoraMisteriosa {
 			suma += numeros[i];
 		}
 
-		return suma / (numeros.length - 1);
+		return suma / (numeros.length);
 	}
 
 	public static void mostrarInstrucciones() {
